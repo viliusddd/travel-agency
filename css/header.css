@@ -10,15 +10,25 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
+.top-container {
+  margin-bottom: auto;
+}
 .nav-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "search" "globe" "nav";
-  border: 1px solid yellow;
-  margin-bottom: auto;
+  grid-template-areas: "search globe nav";
+  align-items: center;
+  margin: 1.5rem 0 1.5rem;
+  /* border: 1px solid yellow; */
+}
+
+.line {
+  height: 1.5px;
+  color: white;
+  background-color: white;
 }
 
 .transparent-btn {
@@ -31,21 +41,25 @@ header {
   background-color: white;
   border-radius: 25px;
   border: none;
+  padding: 0.8rem 1.8rem 0.8rem 1.8rem;
 }
 
+.search {
+  grid: search;
+}
 #search::placeholder {
   color: white;
 }
 .globe {
   grid: "globe";
   justify-self: center;
-  border: 1px solid orange;
+  align-self: stretch;
 }
 
 .navigation {
   grid: "nav";
   justify-self: end;
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
 }
 
 .menu {
@@ -109,7 +123,7 @@ header {
 .forms {
   display: flex;
   flex-direction: column;
-  border: 1px solid magenta;
+  /* border: 1px solid magenta; */
   flex-grow: 1;
   min-width: 50px;
 }
