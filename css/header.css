@@ -1,0 +1,157 @@
+header {
+  height: 950px;
+  background-image: url("../images/header.jpg");
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.vert-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid red;
+}
+
+.nav-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "search" "globe" "nav";
+  border: 1px solid yellow;
+  margin-bottom: auto;
+}
+
+.transparent-btn {
+  background-color: rgba(255, 0, 0, 0);
+  border: none;
+  color: white;
+}
+
+.sign-in-btn {
+  background-color: white;
+  border-radius: 25px;
+  border: none;
+}
+
+#search::placeholder {
+  color: white;
+}
+.globe {
+  grid: "globe";
+  justify-self: center;
+  border: 1px solid orange;
+}
+
+.navigation {
+  grid: "nav";
+  justify-self: end;
+  border: 1px solid orange;
+}
+
+.menu {
+  display: none;
+}
+
+.hamburger-menu {
+  display: inline;
+}
+
+.intro-text {
+  color: white;
+  justify-self: start;
+  align-self: self-start;
+}
+.intro-text > div {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.intro-text > h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+/* booking form  */
+/* .booking-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  align-items: flex-end;
+  color: white;
+  border: 1px solid greenyellow;
+} */
+.booking-form {
+  display: grid;
+  color: white;
+  column-gap: 12px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: 
+    "dest dest dest"
+    "from to guests"
+    "btn btn btn";
+  flex-shrink: 1;
+}
+
+.dest-form {
+  flex-basis: 120px;
+  grid-area: dest;
+}
+
+.from-form {
+  flex-basis: 120px;
+  grid-area: from;
+}
+
+.to-form {
+  flex-basis: 120px;
+  grid-area: to;
+}
+
+.forms {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid magenta;
+  flex-grow: 1;
+  min-width: 50px;
+}
+
+#from, #to, #number, #guests, #destination {
+  padding: 5px;
+  border-radius: 7px;
+} 
+#destination {
+  padding: 7px;
+}
+
+.guests-form {
+  flex-basis: 80px;
+  grid-area: guests;
+}
+
+.form-btn {
+  flex-basis: 80px;
+  flex-direction: column-reverse;
+  grid-area: btn;
+  margin-top: 1.4rem;
+  margin-bottom: 1.4rem;
+  flex-shrink: 0;
+}
+.form-btn > button {
+  border-radius: 25px;
+  padding: 5px;
+  border: none;
+  background-color: #ffc107;
+}
+
+@media (min-width: 600px) {
+  .menu {
+    display: inline;
+  }
+  .hamburger-menu{
+    display: none;
+  }
+  .booking-form {
+    display: flex;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: "dest from to guests btn";
+  }
+}

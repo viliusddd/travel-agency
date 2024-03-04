@@ -1,0 +1,38 @@
+footer {
+  background-color: #ffc107;
+}
+
+.foot-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.newsletter, .links {
+  margin: 4rem 0rem 5rem;
+}
+
+.links > a {
+  color: black;
+}
+
+.full-bleed {
+  width: 100%;
+  grid-column: 1/-1;
+}
+
+.email-form {
+  display: flex;
+  /* border-radius: 10px;
+  overflow: hidden; */
+}
+
+#email {
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .foot-container {
+    grid-template-columns: 1fr 1fr; 
+  }
+}
