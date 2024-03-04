@@ -20,12 +20,22 @@
     gap: 1rem;
     margin: 2rem 0rem 4rem;
 }
-.destinations-img > img {
+.dest-img {
   width: 100%;
+}
+.destinations-img > div {
   /* max-width: calc(25% - 10px); */
-  min-width: 25%;
+  /* min-width: 25%; */
   border-radius: 1rem;
+  position: relative;
+}
 
+.gradient {
+  background-image: linear-gradient(
+    to top, rgba(0, 0, 0, 0.894) 0%, 25%, rgba(0, 0, 0, 0) 50%);
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 @media (min-width: 600px) {
@@ -37,7 +47,7 @@
     border-radius: 1rem;
     overflow: hidden;
   }
-  .destinations-img > img {
+  .destinations-img > div {
     border-radius: 0px;
   }
 }
