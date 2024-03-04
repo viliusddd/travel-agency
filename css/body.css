@@ -9,11 +9,9 @@ body {
 }
 .wrapper {
   display: grid;
-  /* grid-template-columns: 1fr min(1140px, 100%) 1fr; */
   grid-template-columns: 1fr min(var(--page-width), 100% - 24px) 1fr;
   /* border: 2px solid blue; */
   column-gap: 12px;
-  /* align-items: start; */
 }
 
 .wrapper > * {
