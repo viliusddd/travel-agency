@@ -175,7 +175,7 @@ header {
   background-color: #ffc107;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 562px) {
   header {
     height: var(--header-height-bg);
   }

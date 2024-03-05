@@ -1,6 +1,6 @@
 :root {
   --page-width: 1300px;
-  --page-sm-width: 600px;
+  --page-sm-width: 562px;
   --dest-img-gap: 10px;
   --dest-columns: 4;
   --header-height-bg: 950px;
@@ -20,14 +20,14 @@ body {
   grid-column: 2;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 562px) {
   .menu {
     display: inline;
   }
   .hamburger-menu{
     display: none;
   }
-  .destinations-img {
+  .dest-img-container {
       grid-template-columns: repeat(4, 4fr);
   }
   .foot-container {
