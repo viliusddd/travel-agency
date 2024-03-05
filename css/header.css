@@ -103,15 +103,6 @@ header {
   font-weight: 700;
 }
 
-/* booking form  */
-/* .booking-form {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3px;
-  align-items: flex-end;
-  color: white;
-  border: 1px solid greenyellow;
-} */
 .booking-form {
   display: grid;
   color: white;
@@ -142,7 +133,6 @@ header {
 .forms {
   display: flex;
   flex-direction: column;
-  /* border: 1px solid magenta; */
   flex-grow: 1;
   min-width: 50px;
 }
@@ -194,5 +184,12 @@ header {
     display: flex;
     grid-template-columns: repeat(5, 1fr);
     grid-template-areas: "dest from to guests btn";
+  }
+  .form-btn {
+    flex-shrink: 0;
+    max-width: 5rem;
+  }
+  .guests-form {
+    flex-basis: 0px;
   }
 }
