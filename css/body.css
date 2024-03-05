@@ -3,6 +3,8 @@
   --page-sm-width: 600px;
   --dest-img-gap: 10px;
   --dest-columns: 4;
+  --header-height-bg: 950px;
+  --header-height-sm: 900px;
 }
 body {
   font-family: Montserrat, sans-serif;
