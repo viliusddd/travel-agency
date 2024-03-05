@@ -26,6 +26,11 @@ footer {
   width: 100%;
 }
 
+#button-addon2 {
+  color: white;
+  background-color: #198754;
+}
+
 @media (min-width: 600px) {
   .foot-container {
     grid-template-columns: 1fr 1fr; 
