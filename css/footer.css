@@ -5,14 +5,11 @@ footer {
 .foot-container {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
-}
-
-.newsletter, .links {
+  gap: 1rem;
   margin: 4rem 0rem 5rem;
 }
 
-.links > a {
+.foot-container div a {
   color: black;
 }
 
@@ -23,8 +20,6 @@ footer {
 
 .email-form {
   display: flex;
-  /* border-radius: 10px;
-  overflow: hidden; */
 }
 
 #email {
