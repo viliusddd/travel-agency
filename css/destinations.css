@@ -23,10 +23,10 @@
 .dest-img {
   width: 100%;
 }
-.destinations-img > div {
-  /* max-width: calc(25% - 10px); */
-  /* min-width: 25%; */
+.destinations-img div img {
   border-radius: 1rem;
+}
+.destinations-img > div {
   position: relative;
 }
 .dest-title {
@@ -55,6 +55,7 @@
   position: absolute;
   height: 100%;
   width: 100%;
+  border-radius: 1rem;
 }
 
 @media (min-width: 600px) {
@@ -62,11 +63,11 @@
     grid-template-columns: repeat(3, 1fr);
   }
   .destinations-img {
-      grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     border-radius: 1rem;
     overflow: hidden;
   }
-  .destinations-img > div {
+  .destinations-img div img {
     border-radius: 0px;
   }
 }
